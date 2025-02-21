@@ -1,0 +1,85 @@
+openapi: 3.1.0
+
+info:
+  title: DNSS
+  version: 1.0.0
+  description: 'Данный документ для Ромы'
+
+#tags:
+#  -name: Auth
+#  description: Методы авторизации
+#-name: Created product
+#description: Методы создания продукта
+#
+#
+paths:
+  /api/v1/users/auth:
+    post:
+      summary: Авторизация пользователя на портале
+#    tags:
+#      -Users
+#    -Auth
+#    requestBody:
+#      required: true
+#content:
+#      application/json:
+#        schema:
+#          type: object
+#          required: [login, password]
+#          properties:
+#            login:
+#              type: string
+#              description: Логин пользователя
+#              minLength: 4
+#            password:
+#              type: string
+#              description: Пароль пользователя
+#              minLength: 8
+#    responses:
+#      200:
+#        description: Пользователь авторизован
+#        content:
+#          application/json:
+#            schema:
+#              type: object
+#              required: [token, user]
+#              properties:
+#                token:
+#                  type: string
+#                user:
+#                $ref: './models/user.yml#/User'
+#        400:
+#          $ref: '#/components/responses/400'
+#        401:
+#          $ref: '#/components/responses/401'
+#        403:
+#          $ref: '#/components/responses/403'
+#        500:
+#          $ref: '#/components/responses/500'
+#
+#/api/v1/products:
+#      post:
+#        summary: Создание продукта
+#        tags:
+#          -Products
+#        requestBody:
+#          required: true
+#        content:
+#          application/json:
+#            schema:
+#              $ref: './models/product.yml#/ProductCreateRequest'
+#        responses:
+#          200:
+#            description: Продукт создан
+#            content:
+#              application/json:
+#                schema:
+#                  $ref: './models/product.yml#/Product'
+#          400:
+#            $ref: '#/components/responses/400'
+#          402:
+#            $ref: '#/components/responses/402'
+#          403:
+#            $ref: '#/components/responses/403'
+#          500:
+#            $ref: '#/components/responses/500'
